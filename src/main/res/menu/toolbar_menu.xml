@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">  <!-- 正确声明app命名空间 -->
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="添加任务"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_CompletedTasks"
+        android:title="历史任务"
+        android:icon="@drawable/ic_completed_task"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="设置"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="关于"
+        android:icon="@drawable/ic_more_vert"
+        app:showAsAction="always" />
+
+</menu>

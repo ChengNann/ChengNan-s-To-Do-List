@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- 页面标题 -->
+    <TextView
+        android:id="@+id/textViewPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加任务ing (#^.^#)"
+        style="@style/TitleTextStyle"
+        android:contentDescription="界面主题设置" />
+
+    <!-- 主体内容区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- 任务标题 -->
+            <TextView
+                android:id="@+id/textViewTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="任务标题："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="在此输入任务标题"
+                android:inputType="text" />
+
+            <!-- 任务描述 -->
+            <TextView
+                android:id="@+id/textViewDescriptionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="任务描述："
+                android:textSize="14sp"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="在此输入任务描述（可选）"
+                android:inputType="text" />
+
+            <!-- 截止时间按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonPickDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="选择截止时间"
+                app:icon="@drawable/ic_calendar"
+                app:iconGravity="textStart"
+                app:iconPadding="12dp" />
+
+            <!-- 分类标签 -->
+            <TextView
+                android:id="@+id/textViewCategoryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="分类标签："
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="在此输入分类标签（如 工作 / 学习）"
+                android:inputType="text" />
+
+            <!-- 已选时间展示 -->
+            <TextView
+                android:id="@+id/textViewSelectedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="截止时间："
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/textColor" />
+
+            <!-- 保存按钮 -->
+            <Button
+                android:id="@+id/buttonSaveTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存任务"
+                android:layout_marginTop="32dp"
+                style="@style/ButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

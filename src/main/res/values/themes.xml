@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TodoList" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 禁用 ActionBar -->
+        <item name="windowActionBar">false</item>
+        <!-- 启用 Toolbar -->
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

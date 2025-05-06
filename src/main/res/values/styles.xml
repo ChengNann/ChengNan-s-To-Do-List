@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- 应用程序主题 -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 自定义应用程序的背景颜色、文本颜色等 -->
+        <item name="colorPrimary">@color/buttonColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <!-- 设置状态栏颜色 -->
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+    </style>
+
+    <!-- 页面标题样式 -->
+    <style name="TitleTextStyle">
+        <item name="android:textSize">22sp</item> <!-- 保持合适的字体大小 -->
+        <item name="android:textColor">#009688</item> <!-- 使用鲜明的墨绿色 -->
+        <item name="android:textStyle">bold</item> <!-- 加粗以突出显示 -->
+        <item name="android:gravity">center</item> <!-- 居中对齐 -->
+        <item name="android:padding">16dp</item> <!-- 添加内边距，避免标题紧贴边缘 -->
+        <item name="android:elevation">4dp</item> <!-- 添加阴影效果 -->
+        <item name="android:background">@drawable/title_background</item> <!-- 添加背景样式 -->
+    </style>
+
+    <!-- 通用按钮样式 -->
+    <style name="ButtonStyle">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:elevation">2dp</item> <!-- 按钮的阴影效果 -->
+    </style>
+
+    <!-- TextInputLayout 样式 -->
+    <style name="TextInputLayoutStyle">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:backgroundTint">#2196F3</item> <!-- 提示文本框背景颜色 -->
+        <item name="android:elevation">1dp</item> <!-- TextInputLayout 的阴影效果 -->
+    </style>
+
+    <!-- TextInputEditText 样式 -->
+    <style name="TextInputEditTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:backgroundTint">#2196F3</item> <!-- 输入框的背景颜色 -->
+        <item name="android:focusableInTouchMode">true</item> <!-- 输入框获得焦点时 -->
+    </style>
+
+    <!-- 输入框聚焦时的样式 -->
+    <style name="TextInputEditTextFocusStyle">
+        <item name="android:backgroundTint">#FF4081</item> <!-- 聚焦时背景颜色变化 -->
+    </style>
+
+    <!-- 选择器样式 -->
+    <style name="SpinnerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/colorAccent</item> <!-- 设置背景色 -->
+    </style>
+
+    <!-- Divider 样式 (分隔线) -->
+    <style name="DividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- CardView 样式 -->
+    <style name="CardViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">12dp</item> <!-- 圆角效果 -->
+        <item name="cardElevation">4dp</item> <!-- 阴影效果 -->
+        <item name="cardBackgroundColor">@android:color/white</item> <!-- 背景颜色 -->
+    </style>
+
+</resources>

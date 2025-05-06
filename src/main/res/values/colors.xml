@@ -1,0 +1,26 @@
+<resources>
+    <!-- 主颜色 -->
+    <color name="primaryColor">#2196F3</color>
+
+    <!-- 辅助颜色 -->
+    <color name="secondaryColor">#FF4081</color>
+
+    <!-- 背景颜色 -->
+    <color name="backgroundColor">#F4F4F4</color>
+
+    <!-- 文本颜色 -->
+    <color name="textColor">#333333</color>
+
+    <!-- 按钮颜色 -->
+    <color name="buttonColor">#4CAF50</color>
+    <color name="buttonColorDisabled">#4CAF5080</color> <!-- 按钮禁用状态 -->
+
+    <!-- 状态栏颜色 -->
+    <color name="statusBarColor">#1976D2</color>
+
+    <!-- 高亮色 -->
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 分割线颜色 -->
+    <color name="dividerColor">#E0E0E0</color>
+</resources>
